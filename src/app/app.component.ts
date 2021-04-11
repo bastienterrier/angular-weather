@@ -48,6 +48,7 @@ export class AppComponent implements OnInit {
 
   public fetchWeather(): void {
     this.loading = true;
+
     this.weatherService
       .getCityTodayWeather(this.longitude, this.latitude)
       .then((res) => (this.todayWeather = res))
