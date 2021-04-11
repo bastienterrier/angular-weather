@@ -6,22 +6,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Instructions
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Step 1 : Afficher la météo du jour pour Lille
 
-## Build
+- API endpoint: `http://www.7timer.info/bin/api.pl?lon=${long}&lat=${lat}&product=civillight&output=json`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Step 2 : Saisie libre
 
-## Running unit tests
+Permettre à l'utilisateur de saisir lui-même les latitude/longitude et de récupérer la météo du jour
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Step 3 : Configurer plusieurs villes
 
-## Running end-to-end tests
+L'utilisateur doit pouvoir sélectionner une ville parmis un ensemble de villes configurée dans l'application. Lors de la sélection les latitude/longitude doivent apparaitre.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Step 4 : Ajouter une ville manuellement
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+L'utilisateur doit pouvoir ajouter une ville à l'ensemble des villes pré-configurées.

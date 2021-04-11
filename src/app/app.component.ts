@@ -17,14 +17,14 @@ export class AppComponent implements OnInit {
 
   public readonly cities: City[] = [
     {
-      name: 'Paris',
-      latitude: 48.8566,
-      longitude: 2.3522,
-    },
-    {
       name: 'Lille',
       latitude: 50.6292,
       longitude: 3.0573,
+    },
+    {
+      name: 'Paris',
+      latitude: 48.8566,
+      longitude: 2.3522,
     },
   ];
 
