@@ -1,11 +1,10 @@
 <h1>{{ title }}</h1>
 
 <form (ngSubmit)="fetchWeather()">
-  <select (change)="onSelectChange($event.target.value)">
-    <option *ngFor="let city of cities">
-      {{ city.name }}
-    </option>
-  </select>
+  <app-weather-city-list
+    [cities]="cities"
+    (changed)="onSelectChange($event)"
+  ></app-weather-city-list>
   <label>
     Latitude
     <input [(ngModel)]="latitude" name="latitude" />

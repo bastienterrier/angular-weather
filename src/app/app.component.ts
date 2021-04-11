@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherDataSerie } from 'src/app/services/weather.interface';
 import { WeatherService } from 'src/app/services/weather.service';
-
-interface City {
-  name: string;
-  latitude: number;
-  longitude: number;
-}
+import { City } from 'src/app/weather/city-list/city-list.component';
 
 @Component({
   selector: 'app-root',
